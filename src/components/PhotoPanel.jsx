@@ -147,24 +147,44 @@ export default function PhotoPanel({
         return () => {};
       }
 
-      setIsPhotoLoading(true);
       let cancelled = false;
 
-      resolveDisplayUrl(photo)
-        .then((url) => {
-          if (cancelled || displayRequestRef.current !== requestId) return;
-          commitDisplayPhoto(url || fullHref || thumbHref, index);
-        })
-        .catch(() => {
-          if (cancelled || displayRequestRef.current !== requestId) return;
-          commitDisplayPhoto(fullHref || thumbHref, index);
-        });
+      // Preloaded thumb: show immediately, upgrade to full when ready.
+      if (thumbHref !== "" && isPhotoDisplayReady(thumbHref)) {
+        commitDisplayPhoto(getPreloadedDisplayUrl(thumbHref), index);
+        if (fullHref !== "" && !isPhotoDisplayReady(fullHref)) {
+          preloadImage(fullHref, { priority: "high" })
+            .then((url) => {
+              if (cancelled || displayRequestRef.current !== requestId || !url) return;
+              commitDisplayPhoto(url, index);
+            })
+            .catch(() => undefined);
+        }
+        return () => {
+          cancelled = true;
+        };
+      }
+
+      // Optimistic display: mount <img> immediately instead of blocking on
+      // preloadImage (which can hang indefinitely without onload/onerror).
+      const initialSrc = fullHref || thumbHref;
+      setDisplaySrc(initialSrc);
+      setDisplaySessionKey(storeSessionKey);
+      setIsPhotoLoading(true);
+      onDisplayPhotoIndexChange?.(index);
+
+      if (fullHref !== "") {
+        preloadImage(fullHref, { priority: "high" }).catch(() => undefined);
+      }
+      if (thumbHref !== "") {
+        preloadImage(thumbHref, { priority: "low" }).catch(() => undefined);
+      }
 
       return () => {
         cancelled = true;
       };
     },
-    [commitDisplayPhoto, onDisplayPhotoIndexChange],
+    [commitDisplayPhoto, onDisplayPhotoIndexChange, storeSessionKey],
   );
 
   useLayoutEffect(() => {
