@@ -1638,6 +1638,48 @@
     "note": null
   },
   {
+    "store_slug": "bco",
+    "store_name_zh": "豆库(江北虹悦城店)",
+    "store_name_en": "Bco",
+    "store_name_local": null,
+    "city_en": "nanjing",
+    "dish_name_zh": "黑松露鹅肝牛肉炒饭",
+    "dish_name_en": null,
+    "dish_name_local": null,
+    "price": "89",
+    "currency": "CNY",
+    "taste": 5,
+    "note": "黑松露味浸在饭里 闻起来吃起来都香香的但不冲不油"
+  },
+  {
+    "store_slug": "bco",
+    "store_name_zh": "豆库(江北虹悦城店)",
+    "store_name_en": "Bco",
+    "store_name_local": null,
+    "city_en": "nanjing",
+    "dish_name_zh": "招牌辣味鲜虾馅饼",
+    "dish_name_en": null,
+    "dish_name_local": null,
+    "price": "59",
+    "currency": "CNY",
+    "taste": 4,
+    "note": "以为会很辣 实际上只有一点点辣 是很开胃的菜"
+  },
+  {
+    "store_slug": "bco",
+    "store_name_zh": "豆库(江北虹悦城店)",
+    "store_name_en": "Bco",
+    "store_name_local": null,
+    "city_en": "nanjing",
+    "dish_name_zh": "芒果大虾色拉",
+    "dish_name_en": null,
+    "dish_name_local": null,
+    "price": "65",
+    "currency": "CNY",
+    "taste": 4,
+    "note": "芒果juicy 虾韧韧的"
+  },
+  {
     "store_slug": "cyys",
     "store_name_zh": "茶颜悦色(科巷北门店)",
     "store_name_en": null,
@@ -1692,6 +1734,20 @@
     "currency": "",
     "taste": 3,
     "note": null
+  },
+  {
+    "store_slug": "hdl",
+    "store_name_zh": "海底捞火锅(龙湖雨山天街店)",
+    "store_name_en": null,
+    "store_name_local": null,
+    "city_en": "nanjing",
+    "dish_name_zh": "火锅",
+    "dish_name_en": null,
+    "dish_name_local": null,
+    "price": null,
+    "currency": "",
+    "taste": 3,
+    "note": "苗族酸汤舂舂锅底好辣！竟然比另一边的醇香经典牛油锅底还要辣"
   },
   {
     "store_slug": "hms",
@@ -1876,6 +1932,20 @@
     "note": null
   },
   {
+    "store_slug": "zcw",
+    "store_name_zh": "真茶屋(南京江北虹悦城店)",
+    "store_name_en": null,
+    "store_name_local": null,
+    "city_en": "nanjing",
+    "dish_name_zh": "抹茶芝士芭乐",
+    "dish_name_en": null,
+    "dish_name_local": null,
+    "price": null,
+    "currency": "",
+    "taste": 4,
+    "note": "抹茶+芝士+芭乐——搭在一起很难不好喝"
+  },
+  {
     "store_slug": "zdcb",
     "store_name_zh": "早点吃吧(科巷店)",
     "store_name_en": null,
@@ -1885,7 +1955,7 @@
     "dish_name_en": null,
     "dish_name_local": null,
     "price": "11.5",
-    "currency": "",
+    "currency": "CNY",
     "taste": 4,
     "note": "碳水大满足"
   },
@@ -1899,7 +1969,7 @@
     "dish_name_en": null,
     "dish_name_local": null,
     "price": "14",
-    "currency": "",
+    "currency": "CNY",
     "taste": 3,
     "note": null
   },
@@ -4494,6 +4564,34 @@
     "note": null
   },
   {
+    "store_slug": "drunk-baker",
+    "store_name_zh": "DRUNK BAKER",
+    "store_name_en": null,
+    "store_name_local": null,
+    "city_en": "shanghai",
+    "dish_name_zh": "苦抹碱水贝果",
+    "dish_name_en": "Matcha Brezen Bagel",
+    "dish_name_local": null,
+    "price": "18",
+    "currency": "CNY",
+    "taste": 4,
+    "note": "喜欢苦抹！"
+  },
+  {
+    "store_slug": "drunk-baker",
+    "store_name_zh": "DRUNK BAKER",
+    "store_name_en": null,
+    "store_name_local": null,
+    "city_en": "shanghai",
+    "dish_name_zh": "九层抹茶蓝莓巧克力蛋糕",
+    "dish_name_en": "Matcha Blueberry Chocolate Cake",
+    "dish_name_local": null,
+    "price": "58",
+    "currency": "CNY",
+    "taste": null,
+    "note": null
+  },
+  {
     "store_slug": "dskr",
     "store_name_zh": "大叔烤肉",
     "store_name_en": null,
@@ -5164,6 +5262,20 @@
     "currency": "CNY",
     "taste": 4,
     "note": null
+  },
+  {
+    "store_slug": "ecnu",
+    "store_name_zh": "华东师范大学(闵行校区)",
+    "store_name_en": null,
+    "store_name_local": null,
+    "city_en": "shanghai",
+    "dish_name_zh": "一周三明治·贝贝南瓜烤肠肉蛋堡",
+    "dish_name_en": null,
+    "dish_name_local": null,
+    "price": "13.9",
+    "currency": "CNY",
+    "taste": 4,
+    "note": "yummy!"
   },
   {
     "store_slug": "ecnu",
